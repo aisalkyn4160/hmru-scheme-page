@@ -1,0 +1,242 @@
+@use '../blocks';
+@use '../media';
+
+* {
+  box-sizing: border-box;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  //color: var(--main-color);
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+body {
+  font-family: var(--font-family) !important;
+  overflow-x: hidden;
+  color: #303239;
+  cursor: default;
+  position: relative;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  background-color: #F7F7F8;
+}
+
+.container {
+  max-width: 18400px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.main {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.burger-menu {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.kroshki {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 0 0 10px 0;
+  width: auto;
+  a {
+    text-decoration: none;
+
+    color: #758289;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+
+    display: flex;
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6px;
+    border: 1px solid #E1E1E5;
+
+    transition: all .2s ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.page__title {
+  color: #2C3336;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .page__title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page__title {
+    font-size: 32px;
+  }
+  .kroshki {
+    a {
+      font-size: 12px;
+    }
+  }
+}
+
+//h1 {
+//  font-size: 70px;
+//  font-style: normal;
+//  font-weight: 600;
+//  line-height: 133.333%;
+//}
+//
+//h2 {
+//  color: #2C3336;
+//  font-size: 60px;
+//  font-style: normal;
+//  font-weight: 600;
+//  line-height: 120%; /* 69.6px */
+//}
+
+//h3 {
+//  color: #2C3336;
+//  font-size: 40px;
+//  font-style: normal;
+//  font-weight: 300;
+//  line-height: normal;
+//}
+
+//h4 {
+//  color: #FFF;
+//  font-size: 30px;
+//  font-style: normal;
+//  font-weight: 500;
+//  line-height: normal;
+//}
+
+//@media screen and (max-width: 992px) {
+//  h1 {
+//    font-size: 50px;
+//  }
+//
+//  h2 {
+//    font-size: 42px;
+//  }
+//
+//  h4 {
+//    font-size: 28px;
+//  }
+//}
+//@media screen and (max-width: 768px) {
+//  h1 {
+//    font-size: 38px;
+//  }
+//
+//  h2 {
+//    font-size: 32px;
+//  }
+//
+//  h4 {
+//    font-size: 22px;
+//  }
+//}
+//@media screen and (max-width: 576px) {
+//  h1 {
+//    font-size: 30px;
+//  }
+//
+//  h2 {
+//    font-size: 21px;
+//  }
+//
+//  h4 {
+//    font-size: 18px;
+//  }
+//}
