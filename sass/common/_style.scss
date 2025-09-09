@@ -84,7 +84,7 @@ body {
 }
 
 .container {
-  max-width: 18400px;
+  max-width: 1840px;
   margin: 0 auto;
   padding: 0 12px;
 }
@@ -117,7 +117,7 @@ ul {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  margin: 0 0 10px 0;
+  margin: 32px 0 10px 0;
   width: auto;
   a {
     text-decoration: none;
@@ -127,30 +127,27 @@ ul {
     font-style: normal;
     font-weight: 300;
     line-height: 130%;
-
     display: flex;
     padding: 2px 8px;
     justify-content: center;
     align-items: center;
-
     border-radius: 6px;
     border: 1px solid #E1E1E5;
-
     transition: all .2s ease;
+
     &:hover {
-      opacity: 0.7;
+      background: #E1E1E5;
     }
   }
 }
 
 .page__title {
   color: #2C3336;
-  font-size: 40px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 @media screen and (max-width: 768px) {
