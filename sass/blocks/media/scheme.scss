@@ -1,19 +1,24 @@
-@media (max-width: 1250px) {
-  .scheme__item_wrap{
+@media (max-width: 1630px) {
+  .scheme__info{
+    grid-template-columns: 1fr;
+  }
+  .scheme__item_map{
+    min-height: 338px;
+  }
+}
+@media (max-width: 1471px) {
+  .scheme__info{
+    grid-template-columns: 1fr 1fr;
+  }
+   .scheme__item_wrap{
     flex-wrap: wrap;
     gap: 20px;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .scheme {
-    &__item {
-      flex-direction: column;
-      &_map {
-        max-width: 100%;
-        height: 300px;
-      }
-    }
+@media screen and (max-width: 1277px) {
+ .scheme__info{
+    grid-template-columns: 1fr;
   }
 }
 

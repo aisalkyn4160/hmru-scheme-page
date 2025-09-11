@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=55a37b3a-b48b-4484-8869-a0f0b928f8d5&lang=ru_RU"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HMRU</title>
   </head>
@@ -120,15 +121,26 @@
                       
                       </div>
                       <div class="scheme__video">
-                        <a href="https://www.youtube.com/watch?v=4JT0uAykeDI?autoplay=1" class="scheme__video_item">
-                          <img src="/scheme/scheme-image.png" alt="">
-                        </a>
+                        <div class="scheme__video_item">
+                          <div class="video-play-overlay">
+                            <div class="video-play-button" data-fancybox data-src="/public/video/1477023_Business_3840x2160.mp4">
+                               <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27 15.0885C28.3333 15.8583 28.3333 17.7828 27 18.5526L3 32.409C1.66667 33.1788 8.41226e-08 32.2165 1.51421e-07 30.6769L1.36279e-06 2.9641C1.43008e-06 1.4245 1.66667 0.46225 3 1.23205L27 15.0885Z" fill="white"/>
+                                </svg>
+                                           
+                            </div>
+                          </div>
+                          <video poster="/scheme/scheme-image.png">
+                            <source src="flower.webm" type="video/webm">
+                            <source src="/public/video/1477023_Business_3840x2160.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает встроенные видео :(
+                          </video>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="scheme__item_map">
-                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c913fe971c46e158482ae8074424f9e9bbb1cc81ab3425f5f573c4adfdaa34c&amp;source=constructor" width="468" height="302" frameborder="0"></iframe>
+                <div class="scheme__item_map" id="map1" >
                 </div>
               </div>
               <div class="scheme__item">
@@ -231,15 +243,26 @@
                         </a>
                       </div>
                       <div class="scheme__video">
-                        <a href="https://www.youtube.com/watch?v=4JT0uAykeDI?autoplay=1" class="scheme__video_item">
-                          <img src="/scheme/scheme-image.png" alt="">
-                        </a>
+                        <div class="scheme__video_item">
+                          <div class="video-play-overlay">
+                            <div class="video-play-button" data-fancybox data-src="/public/video/1477023_Business_3840x2160.mp4">
+                               <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27 15.0885C28.3333 15.8583 28.3333 17.7828 27 18.5526L3 32.409C1.66667 33.1788 8.41226e-08 32.2165 1.51421e-07 30.6769L1.36279e-06 2.9641C1.43008e-06 1.4245 1.66667 0.46225 3 1.23205L27 15.0885Z" fill="white"/>
+                                </svg>
+                                           
+                            </div>
+                          </div>
+                          <video poster="/scheme/scheme-image.png">
+                            <source src="flower.webm" type="video/webm">
+                            <source src="/public/video/1477023_Business_3840x2160.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает встроенные видео :(
+                          </video>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="scheme__item_map">
-                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c913fe971c46e158482ae8074424f9e9bbb1cc81ab3425f5f573c4adfdaa34c&amp;source=constructor" width="468" height="302" frameborder="0"></iframe>
+                <div class="scheme__item_map" id="map2">
                 </div>
               </div>
               <div class="scheme__item">
@@ -341,16 +364,27 @@
                           <img src="/scheme/scheme-image.png" alt="">
                         </a>
                       </div>
-                      <div class="scheme__video">
-                        <a href="https://www.youtube.com/watch?v=4JT0uAykeDI?autoplay=1" class="scheme__video_item">
-                          <img src="/scheme/scheme-image.png" alt="">
-                        </a>
+                       <div class="scheme__video">
+                        <div class="scheme__video_item">
+                          <div class="video-play-overlay">
+                            <div class="video-play-button" data-fancybox data-src="/public/video/1477023_Business_3840x2160.mp4">
+                               <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27 15.0885C28.3333 15.8583 28.3333 17.7828 27 18.5526L3 32.409C1.66667 33.1788 8.41226e-08 32.2165 1.51421e-07 30.6769L1.36279e-06 2.9641C1.43008e-06 1.4245 1.66667 0.46225 3 1.23205L27 15.0885Z" fill="white"/>
+                                </svg>
+                                           
+                            </div>
+                          </div>
+                          <video poster="/scheme/scheme-image.png">
+                            <source src="flower.webm" type="video/webm">
+                            <source src="/public/video/1477023_Business_3840x2160.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает встроенные видео :(
+                          </video>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="scheme__item_map">
-                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c913fe971c46e158482ae8074424f9e9bbb1cc81ab3425f5f573c4adfdaa34c&amp;source=constructor" width="468" height="302" frameborder="0"></iframe>
+                <div class="scheme__item_map" id="map3">
                 </div>
               </div>
              
