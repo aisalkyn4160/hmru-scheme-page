@@ -1,0 +1,46 @@
+@media screen and (max-width: 1020px) {
+  .catalog-menu{
+    top: 55px;
+
+    &__list{
+      font-size: 22px;
+
+      .big-sale, 
+      .discount{
+        height: 90px;
+      }
+      .big-sale a, 
+      .discount a{
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .catalog-menu{
+    &__list{
+      width: 100%;
+    }
+
+    &__sublist{
+      position: static;
+      column-count: 1;
+    }
+  }
+
+  .has-sublist{
+    position: relative;
+    &__arrow{
+      display: block;
+      position: absolute;
+      top: 2px;
+      right: 0;
+      transform: rotate(90deg);
+      transition: all .2s ease;
+      cursor: pointer;
+    }
+  }
+
+}

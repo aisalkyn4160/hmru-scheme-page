@@ -1,0 +1,90 @@
+@media screen and (max-width: 992px) {
+  .contacts {
+    &__content {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+    &__left {
+      max-width: 100%;
+    }
+    &__right {
+      margin-top: 0;
+    }
+    &__map {
+      height: 400px;
+    }
+    &__cities {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contacts {
+    &__left {
+      padding: 15px;
+    }
+    &__map {
+      height: 300px;
+    }
+    &__cities {
+      margin-bottom: 20px;
+      &_content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &_dropdown {
+        width: 100%;
+      }
+      &_scheme {
+        font-size: 16px;
+      }
+    }
+    &__info {
+      gap: 15px;
+      margin-bottom: 20px;
+      &_description {
+        p,a {
+          font-size: 14px;
+        }
+      }
+    }
+    &__feedback {
+      gap: 15px;
+      border-radius: 20px;
+      padding: 20px 0;
+      &_title {
+        font-size: 22px;
+      }
+      &_description {
+        font-size: 16px;
+      }
+      &_form {
+        input, button {
+          font-size: 16px;
+          height: 48px;
+          padding: 0 17px;
+        }
+        button {
+          // width: 100%;
+          // position: static;
+        }
+      }
+      &_social {
+        gap: 5px;
+      }
+      &_item {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    &__requisite {
+      &_title {
+        font-size: 22px;
+      }
+      &_content p {
+        font-size: 16px;
+      }
+    }
+  }
+}
