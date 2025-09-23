@@ -396,14 +396,14 @@
                        </div>
                    </div>
                    <div class="footer__buttons">
-                       <a href="/service/" class="footer__buttons_item">Обратиться в сервис</a>
+                       <a href="javascript:;" class="footer__buttons_item show-service-popup">Обратиться в сервис</a>
                        <button class="footer__buttons_item show-popup">Заказать звонок</button>
                    </div>
                </div>
            </div>
            <div class="footer__mobile">
                <div class="footer__buttons">
-                   <a href="/service/" class="footer__buttons_item">Обратиться в сервис</a>
+                   <a href="javascript:;" class="footer__buttons_item">Обратиться в сервис</a>
                    <a href="javascript:;" data-src="#back_call" data-fancybox class="footer__buttons_item">Заказать звонок</a>
                </div>
            </div>
@@ -414,7 +414,7 @@
             <div class="footer__form_left">
                 <span class="footer__form_title">Новостная рассылка</span>
                 <div class="footer__form_privacy">
-                    <input type="checkbox" name="footerCheck" id="footerCheck">
+                    <input type="checkbox" name="footerCheck" id="footerCheck" required>
                     <label for="footerCheck">
                         <svg width="10" height="10" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 6.50049L5.34483 11.0005L15 1.00049" stroke="white" stroke-width="2"/>
@@ -424,8 +424,8 @@
                 </div>
             </div>
             <div class="footer__form_right">
-                <input type="email" placeholder="Введите e-mail" class="footer__form_input">
-                <button type="submit" class="footer__form_button">Подписаться</button>
+                <input type="email" placeholder="Введите e-mail" class="footer__form_input" required>
+                <button type="submit" class="footer__form_button show-subscrube">Подписаться</button>
             </div>
         </div>
     </form>
