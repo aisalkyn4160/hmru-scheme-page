@@ -5,7 +5,7 @@
 
   &__top {
     background: #f7f8fa;
-    padding: 10px 0;
+    padding: 5px 0;
     height: 50px;
   
 
@@ -14,16 +14,15 @@
       align-items: center;
       justify-content: space-between;
       position: relative;
+      height: 100%;
     }
 
     &_other {
       display: flex;
       align-items: center;
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 0;
       right: 40px;
-      padding-top: 5px;
       background-color: #F7F7F8;
       padding-left: 15px;
       z-index: 100;

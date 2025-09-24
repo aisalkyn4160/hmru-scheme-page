@@ -19,6 +19,12 @@
 @media screen and (max-width: 1277px) {
  .scheme__info{
     grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+  .scheme__item_map{
+    min-height: 454px;
+    border-radius: 16px;
+    padding-bottom: 45px;
   }
 }
 

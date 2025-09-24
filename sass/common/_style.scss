@@ -64,7 +64,9 @@ textarea,
 select {
   font: inherit;
 }
-
+button{
+  cursor: pointer;
+}
 html {
   scroll-behavior: smooth;
   &.lock {
@@ -79,8 +81,8 @@ body {
   cursor: default;
   position: relative;
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
   background-color: #F7F7F8;
+  line-height: normal;
 }
 
 .container {
@@ -122,6 +124,7 @@ ul {
   transition: .3s ease;
   white-space: nowrap;
   height: 52px;
+  cursor: pointer;
 
   &:hover{
     background: #1087FE;
