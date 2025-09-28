@@ -124,11 +124,40 @@
     -moz-column-break-inside: avoid;
     break-inside: avoid;
     margin-bottom: 16px;
+    position: relative;
     a{
       padding: 8px;
       display: block;
     }
+     > .sublist__arrow{
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 21px;
+      height: 21px;
+      border-radius: 4px;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+
+      svg path{
+        transition: all 0.3s ease;
+      }
+      &.active{
+        background-color: #0071E3;
+        svg{
+          transform: rotate(180deg);
+          path{
+            stroke: #FFF;
+          }
+        }
+      }
+    }
     ul{
+      display: none;
       li{
         color: #70828A;
         font-weight: 400;
